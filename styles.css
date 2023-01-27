@@ -1,0 +1,14 @@
+body {
+    background-color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+img {
+    border: solid 1px white;
+    padding: 1vw;
+}
+
+p {
+    color: burlywood;
+}
