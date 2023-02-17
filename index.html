@@ -7,32 +7,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thiha Min Zin</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-
 </head>
 
-<body>
-    <header>
-        <h1>
-            WELCOME...
-            This is my website for Core 2: Interaction
-        </h1>
+<body onload="move('circle')">
+
+   <div class="adjust"> <div id="circle" class="circle"></div> 
+
+    <header class="title">
+        <h1> THIS <br> IS MY <br> PORTFOLIO, <br> I GUESS. </h1>
     </header>
 
-    <section>
-        <img width="200" src="image/smoke.png">
-    </section>
-
-    <nav>
-        <h4>
-            Get to know me
-        </h4>
-        <h4>
-            Lab Assignments
-        </h4>
-        <h4>
-            Lab Projects
-        </h4>
+    <nav class="navbar">
+        <a style="text-decoration:none" href="../thihamz.github.io/lab.html">LAB</a>
+        <a style="text-decoration:none" href="../thihamz.github.io/projects.html">PROJECTS</a>
+        <a style="text-decoration:none" href="../thihamz.github.io/aboutme.html">ABOUT ME</a>
     </nav>
+
+
+    <script>
+        var dragValue;
+
+        function move(circle) {
+            var element1 = document.getElementById("circle");
+            
+            element1.style.position = "relative";
+             element1.onmousedown = function () {
+                dragValue = element1
+        }
+    }
+        document.onmouseup = function (e) {
+            dragValue = null;
+        }
+        document.onmousemove = function (e) {
+            var x = e.pageX;
+            var y = e.pageY;
+
+            dragValue.style.left = x -125 + "px";
+            dragValue.style.top = y -125 + "px";
+        }
+    </script>
+
+
+    <article>
+
+    </article>
 
 </body>
 

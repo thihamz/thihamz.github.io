@@ -1,0 +1,100 @@
+ @font-face {
+    font-family: 'Romie-Bold';
+    src: url('../thihamz.github.io/assets/fonts/romie-bold-webfont.woff2') format('woff2'),
+        url('../thihamz.github.io/assets/fonts/romie-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Romie-Medium';
+    src: url('../thihamz.github.io/assets/fonts/romie-medium-webfont.woff2') format('woff2'),
+        url('../thihamz.github.io/assets/fonts/romie-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Univers-cd';
+    src: url('../thihamz.github.io/assets/fonts/univers-condensed-webfont.woff2') format('woff2'),
+         url('../thihamz.github.io/assets/fonts/univers-condensed-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Univers-Bold-cd';
+    src: url('../thihamz.github.io/assets/fonts/univers-condensedbold-webfont.woff2') format('woff2'),
+         url('../thihamz.github.io/assets/fonts/univers-condensedbold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    padding: 50px;
+    background-color: black
+}
+
+.container {
+    border: solid 1px transparent;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.text {
+    border: solid 1px transparent;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    
+}
+
+.image {
+    width: 60%;
+
+    margin-left:30px;
+    position:static;
+    float: right;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.circle:hover {
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    border-radius: 50%;
+}
+
+.title {
+    border: solid 1px transparent;
+
+    font-family: 'Univers-Bold-cd';
+    font-size: 20em;
+    color: white;
+    margin-bottom: 0;
+}
+
+.body-text {
+    border: solid 1px transparent;
+
+    width: 60%;
+    font-family: 'Univers-cd';
+    font-size: 3em;
+    line-height: 1em;
+    color: white;
+    text-align:left;
+    line-break: normal;
+}
