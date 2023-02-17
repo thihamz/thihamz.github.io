@@ -28,7 +28,7 @@ body {
 }
 
 .text {
-    border: solid 1px transparent;
+    border: solid 1px pink;
     display: flex;
     flex-direction: column;
     align-content: flex-end;
@@ -36,8 +36,7 @@ body {
 }
 
 .image {
-    width: 60%;
-
+    width: 100%;
     margin-left:30px;
     position:static;
     float: right;
@@ -65,9 +64,11 @@ img {
 .title {
     border: solid 1px transparent;
 
-    font-family: 'Univers-Bold-cd', Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
+    font-style: 700;
     font-size: 30vw;
     color: white;
+    margin-top: 10%;
     margin-bottom: 0;
 }
 
@@ -75,7 +76,7 @@ img {
     border: solid 1px transparent;
 
     width: 60%;
-    font-family: 'Univers-cd', Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-size: 2em;
     line-height: 1em;
     color: white;
