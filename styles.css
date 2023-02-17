@@ -63,7 +63,7 @@ body {
 /*title*/
 .title {
     border: solid 1px transparent;
-    font-family: 'Univers-Bold-cd';
+    font-family: 'Univers-Bold-cd', Arial, Helvetica, sans-serif;
     color: white;
     font-size: 6em;
     line-height: 180%;
@@ -78,7 +78,7 @@ h1 {
 
 /* Navbar Codes */
 .navbar {
-    font-family: 'Univers-cd';
+    font-family: 'Univers-cd', Helvetica, sans-serif;
     font-weight: bold;
 
     border: solid 1px transparent;
