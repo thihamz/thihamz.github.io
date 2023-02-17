@@ -1,20 +1,4 @@
 @font-face {
-    font-family: 'Romie-Bold';
-    src: url('../thihamz.github.io/assets/fonts/romie-bold-webfont.woff2') format('woff2'),
-        url('../thihamz.github.io/assets/fonts/romie-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Romie-Medium';
-    src: url('../thihamz.github.io/assets/fonts/romie-medium-webfont.woff2') format('woff2'),
-        url('../thihamz.github.io/assets/fonts/romie-medium-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'Univers-cd';
     src: url('../thihamz.github.io/assets/fonts/univers-condensed-webfont.woff2') format('woff2'),
          url('../thihamz.github.io/assets/fonts/univers-condensed-webfont.woff') format('woff');
@@ -53,7 +37,8 @@ body {
 .title {
     border: solid 3px black;
 
-    font-family: 'Univers-Bold-cd';
+    font-family: 'Univers-Bold-cd', Helvetica, sans-serif;
+    font-style: 700;
     font-size: 7em;
     line-height: 175%;
     padding: 2%;
@@ -64,12 +49,8 @@ a {
     color: white;
 }
 
-a {
-    color: white;
-}
-
 li {
-    font-family: 'Univers-cd';
+    font-family: 'Univers-cd', Helvetica, sans-serif;
     font-size: 2em; 
     padding: 5px;
     border-radius: 10px;
