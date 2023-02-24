@@ -37,7 +37,7 @@ body {
 
     position: relative;
 
-    mix-blend-mode:exclusion;
+    mix-blend-mode: exclusion;
 }
 
 .circle:hover {
@@ -50,7 +50,7 @@ body {
 
     position: relative;
 
-    mix-blend-mode:exclusion;
+    mix-blend-mode: exclusion;
 }
 
 #circle {
