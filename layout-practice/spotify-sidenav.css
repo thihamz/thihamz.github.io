@@ -5,7 +5,7 @@
 */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1vw;
+    font-size: 1.2vw;
 }
 
 /* container styles */
@@ -55,7 +55,7 @@ body {
 
 .icon {
     width: 3vw;
-    height: auto;
+    height: 3vw;
     background-color: white;
     border-radius: 5px;
 }
@@ -113,6 +113,10 @@ body {
 }
 
 li {
+    font-size: 15px;
+    overflow: hidden;
+    word-break: none;
+    
     color: lightgray;
     list-style-type: none;
 
