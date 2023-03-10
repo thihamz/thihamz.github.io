@@ -1,0 +1,120 @@
+/* body {
+    background-color: black;
+    color: white;
+}
+*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+}
+
+/* container styles */
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 90vh 10vh;
+    grid-template-areas:
+        "side-nav main main activity"
+        "footer footer footer footer";
+}
+
+.side-nav {
+    grid-area: side-nav;
+    background-color: black;
+}
+
+.main {
+    padding: 20px;
+    grid-area: main;
+    background: linear-gradient(#9a9a9a, #000000);
+}
+
+.activity {
+    grid-area: activity;
+    background-color: black;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: lightslategray;
+}
+
+/* side nav styles */
+.side-nav {
+    padding: 30px;
+}
+
+.nav {
+    border: solid 1px transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-bottom: 25px;
+}
+
+.icon {
+    width: 3vw;
+    height: auto;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.home,
+.search,
+.library,
+.create,
+.liked-songs {
+    border: solid 1px transparent;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    color: lightgray;
+    font-style: bold;
+}
+
+.create {
+    margin-top: 20px;
+}
+
+/* playlist */
+
+.playlist-scroll {
+    border: solid 1px transparent;
+    height: 58vh;
+    overflow-y: auto;
+
+    border-top: solid .2px white;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 10px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.list::before {
+    content: '';
+    position: sticky;
+    top: 0;
+    width: auto;
+    height: 25px;
+    background: linear-gradient(black, rgba(0, 0, 0, 0.01));
+}
+
+li {
+    color: lightgray;
+    list-style-type: none;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
