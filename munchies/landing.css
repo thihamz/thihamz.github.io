@@ -92,6 +92,10 @@ body {
     
 }
 
+a {
+  transition: 300ms;
+}
+
 /**************** Hover effect Laptop ******************/
 
 :root {
