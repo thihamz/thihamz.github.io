@@ -1,21 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Munchies</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="food-items.css">
+    <link rel="stylesheet" href="footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Sora:wght@500&display=swap" rel="stylesheet">
+    
+<script>
+    function myFunction() {
+      var x = document.getElementById("filterWrapper");
+      if (x.style.display === "none") {
+        x.style.display = "grid";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    </script>
 </head>
 
 <body>
+    <div id="websiteFrameTop" class="websiteFrame"></div>
+    <div id="websiteFrameRight" class="websiteFrame"></div>
+    <div id="websiteFrameBottom" class="websiteFrame"></div>
+    <div id="websiteFrameLeft" class="websiteFrame"></div>
+
+    <div class="navBar">
+        <div>
+            Let's Find You Something To Eat!
+        </div>
+        <button onclick="myFunction()" class="filterButton">
+            Filters
+        </button>
+    </div>
+
+    <div id="filterWrapper" class="filterWrapper">
+        <li>Hot</li>
+        <li>Cold</li>
+        <li>Sweet</li>
+        <li>Savory</li>
+        <li>Soft</li>
+        <li>Crunchy</li>
+        <li>Soup</li>
+        <li>Dry</li>
+        <li>Heavy</li>
+        <li>Light</li>
+        <li>Spicy</li>
+        <li>Salty</li>
+</div>
+
     <header class="container">
         <div class="title">
-           <a herf="main.html">Munchies</a> 
+            <a href="landing.html">MUNCHIES</a>
         </div>
     </header>
+
+
+    <div class="foodWrapper">
+        <div class="items">
+            <img src="assets/food-images-truecolor/chicken-over-rice.png" alt="chicken-over-rice">
+            <div class="itemName">
+                Chicken Over Rice
+            </div>
+        </div>
+        <div class="items">
+            <img src="assets/food-images-truecolor/chocolate-cake.png" alt="chocolate-cake">
+            <div class="itemName">
+                Chocolate Cake
+            </div>
+        </div>
+        <div class="items">
+            <img src="assets/food-images-truecolor/shin-ramen.png" alt="shin-ramen">
+            <div class="itemName">
+                Shin Ramen
+            </div>
+        </div>
+        <div class="items">
+            <img src="assets/food-images-truecolor/grapes.png" alt="grapes">
+            <div class="itemName">
+                Grapes
+            </div>
+        </div>
+        <div class="items">
+            <img src="assets/food-images-truecolor/fried-chicken.png" alt="fried-chicken">
+            <div class="itemName">
+                Fried Chicken
+            </div>
+        </div>
+        <div class="items">
+            <img src="assets/food-images-truecolor/grilled-cheese.png" alt="fried-chicken">
+            <div class="itemName">
+                Grilled Cheese
+            </div>
+        </div>
+        <div class="items">
+            <img src="assets/food-images-truecolor/cheetos.png" alt="fried-chicken">
+            <div class="itemName">
+                Hot Cheetos
+            </div>
+        </div>
+        <div class="items">
+            <img src="assets/food-images-truecolor/gummies.png" alt="fried-chicken">
+            <div class="itemName">
+                Gummies
+            </div>
+        </div>
+        <div class="items">
+            <img>
+            <div class="itemName">
+                Chicken Over Rice
+            </div>
+        </div>
+        <div class="items">
+            <img>
+            <div class="itemName">
+                Cake
+            </div>
+        </div>
+        <div class="items">
+            <img>
+            <div class="itemName">
+                Shin Ramen
+            </div>
+        </div>
+        <div class="items">
+            <img>
+            <div class="itemName">
+                Grapes
+            </div>
+        </div>
+        <div class="items">
+            <img>
+            <div class="itemName">
+                Fried Chicken
+            </div>
+        </div>
+        <div class="items">
+            <img>
+            <div class="itemName">
+                Grilled Cheese
+            </div>
+        </div>
+        <div class="items">
+            <img>
+            <div class="itemName">
+                Hot Cheetos
+            </div>
+        </div>
+        <div class="items">
+            <img>
+            <div class="itemName">
+                Gummies
+            </div>
+        </div>
+    </div>
+
+    <footer class="footerWrapper">
+        <p>About this project</p>
+        <p> This is a munchie</p>
+    </footer>
 </body>
+
 </html>

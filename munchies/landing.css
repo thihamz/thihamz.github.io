@@ -17,19 +17,19 @@ font-family: 'Anton', sans-serif;*/
  }
  @keyframes backgroundColorPalette {
 	0% {
-		background: #ee6055;
+		background: #e85709;
 	}
 	25% {
-		background: #60d394;
+		background: #c1f429;
 	}
 	50% {
-		background: #aaf683;
+		background: #29ade6;
 	}
 	75% {
-		background: #ffd97d;
+		background: #d419e1;
 	}
 	100% {
-		background: #ff9b85;
+		background: #f30619;
 	}
 }
 
@@ -81,6 +81,11 @@ body {
     justify-content: center;
 
 
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 .title {
@@ -195,7 +200,7 @@ a {
     }
   }
 
-  /**************** Hover effect Phone Screen ******************/
+  /**************** Hover Effect Phone Screen ******************/
 
   @media screen and (max-width: 500px) {
     :root {

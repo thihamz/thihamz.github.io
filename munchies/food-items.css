@@ -1,0 +1,138 @@
+/****************** Food Items **********************/
+:root {
+  --item-borders: solid 1.5px yellowgreen;
+}
+
+.foodWrapper{
+    border: solid 1px transparent;
+ 
+    padding: 1rem;
+ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1vh;
+ 
+ }
+ 
+ .items {
+    border: var(--item-borders);
+    border-radius: 10px;
+ 
+    padding: 1vh;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40vh;
+ }
+ 
+ .items:hover {
+    animation: boxshadow 1.2s ease-in , move 1.2s ease-in;
+    background-color: yellowgreen;
+    border-radius: 10px;
+ 
+    padding: 1vh;
+    cursor: pointer;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40vh;
+ }
+ 
+ 
+ img {
+    background-color: transparent;
+    border-radius: 5px;
+    height: 15vh;
+    width: auto;
+    
+ }
+ 
+ .itemName {
+ 
+    font-family: 'Sora', sans-serif;
+    font-weight: 400;
+    color: var(--color-tertiary);
+    font-size: clac(1% + 0.5vh);
+    font-weight: 600;
+    
+    margin-left: 1vh;
+    text-align: right;
+ }
+ 
+ .itemName:hover {
+  font-family: 'Sora', sans-serif;
+  color: white;
+  font-size: clac(1% + 0.5vh);
+  font-weight: 600;
+  
+  margin-left: 1vh;
+  text-align: right;
+ }
+
+ @keyframes boxshadow {
+    0% {
+      box-shadow: none;
+    }
+    10% {
+      box-shadow: 3px 3px 0 var(--color-secondary);
+    }
+    20% {
+      box-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary);
+    }
+    30% {
+      box-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+    }
+    40% {
+      box-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+        12px 12px 0 var(--color-quinary);
+    }
+    50% {
+      box-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+        12px 12px 0 var(--color-quinary);
+    }
+    60% {
+      box-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+        12px 12px 0 var(--color-quinary);
+    }
+    70% {
+      box-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+    }
+    80% {
+      box-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary);
+    }
+    90% {
+      box-shadow: 3px 3px 0 var(--color-secondary);
+    }
+    100% {
+      box-shadow: none;
+    }
+  }
+ @keyframes move {
+    0% {
+      transform: translate(0px, 0px);
+    }
+    40% {
+      transform: translate(-3px, -3px);
+    }
+    50% {
+      transform: translate(-5px, -5px);
+    }
+    60% {
+      transform: translate(-3px, -3px);
+    }
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+ 
