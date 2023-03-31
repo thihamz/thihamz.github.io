@@ -101,6 +101,33 @@ a {
   transition: 300ms;
 }
 
+/**************** Images ******************/
+
+img {
+  position: absolute;
+  width: 10vw;
+  height: auto;
+  z-index: 1;
+}
+
+.img1 {
+  top: 15vw;
+  left: 15vw;
+  animation: circle1 30s linear infinite;
+}
+
+.img2 {
+  top: 20vw;
+  left: 60vw;
+  animation: circle2 30s linear infinite;
+}
+
+.img3 {
+  top: 50vw;
+  left: 20vw;
+  animation: circle2 30s linear infinite;
+}
+
 /**************** Hover effect Laptop ******************/
 
 :root {

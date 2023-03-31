@@ -14,14 +14,26 @@
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Sora:wght@500&display=swap" rel="stylesheet">
     
 <script>
-    function myFunction() {
-      var x = document.getElementById("filterWrapper");
-      if (x.style.display === "none") {
-        x.style.display = "grid";
-      } else {
-        x.style.display = "none";
-      }
-    }
+   fetch('items.json')
+            .then(response => response.json())
+            .then(data => {
+                // Get the list element
+                const list = document.getElementById('list');
+
+                // Loop through the data and each item to the list
+                data.forEach(student => {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+
+                // Set the test content and href attributes for the link
+                a.textContent = student.Name;
+                a.href = "http://" + student.Github + ".github.io";
+
+                // Add the link to the list 
+                li.appendChild(a);
+                list.appendChild(li);
+            });
+            })
     </script>
 </head>
 
@@ -63,108 +75,16 @@
 
 
     <div class="foodWrapper">
-        <div class="items">
-            <img src="assets/food-images-truecolor/chicken-over-rice.png" alt="chicken-over-rice">
-            <div class="itemName">
-                Chicken Over Rice
-            </div>
-        </div>
-        <div class="items">
-            <img src="assets/food-images-truecolor/chocolate-cake.png" alt="chocolate-cake">
-            <div class="itemName">
-                Chocolate Cake
-            </div>
-        </div>
-        <div class="items">
-            <img src="assets/food-images-truecolor/shin-ramen.png" alt="shin-ramen">
-            <div class="itemName">
-                Shin Ramen
-            </div>
-        </div>
-        <div class="items">
-            <img src="assets/food-images-truecolor/grapes.png" alt="grapes">
-            <div class="itemName">
-                Grapes
-            </div>
-        </div>
-        <div class="items">
-            <img src="assets/food-images-truecolor/fried-chicken.png" alt="fried-chicken">
-            <div class="itemName">
-                Fried Chicken
-            </div>
-        </div>
-        <div class="items">
-            <img src="assets/food-images-truecolor/grilled-cheese.png" alt="fried-chicken">
-            <div class="itemName">
-                Grilled Cheese
-            </div>
-        </div>
-        <div class="items">
-            <img src="assets/food-images-truecolor/cheetos.png" alt="fried-chicken">
-            <div class="itemName">
-                Hot Cheetos
-            </div>
-        </div>
-        <div class="items">
-            <img src="assets/food-images-truecolor/gummies.png" alt="fried-chicken">
-            <div class="itemName">
-                Gummies
-            </div>
-        </div>
-        <div class="items">
-            <img>
-            <div class="itemName">
-                Chicken Over Rice
-            </div>
-        </div>
-        <div class="items">
-            <img>
-            <div class="itemName">
-                Cake
-            </div>
-        </div>
-        <div class="items">
-            <img>
-            <div class="itemName">
-                Shin Ramen
-            </div>
-        </div>
-        <div class="items">
-            <img>
-            <div class="itemName">
-                Grapes
-            </div>
-        </div>
-        <div class="items">
-            <img>
-            <div class="itemName">
-                Fried Chicken
-            </div>
-        </div>
-        <div class="items">
-            <img>
-            <div class="itemName">
-                Grilled Cheese
-            </div>
-        </div>
-        <div class="items">
-            <img>
-            <div class="itemName">
-                Hot Cheetos
-            </div>
-        </div>
-        <div class="items">
-            <img>
-            <div class="itemName">
-                Gummies
-            </div>
-        </div>
+    <div class="card">
+        
+    </div>
     </div>
 
-    <footer class="footerWrapper">
-        <p>About this project</p>
-        <p> This is a munchie</p>
-    </footer>
+
+
+ 
+
+
 </body>
 
 </html>
