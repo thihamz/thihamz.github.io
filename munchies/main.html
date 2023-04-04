@@ -11,37 +11,210 @@
     <link rel="stylesheet" href="footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Sora:wght@500&display=swap" rel="stylesheet">
-    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Arvo:wght@400;700&family=Bangers&family=Sora:wght@500&display=swap" rel="stylesheet">
+
 <script>
-   fetch('items.json')
-            .then(response => response.json())
-            .then(data => {
-                // Get the list element
-                const list = document.getElementById('list');
+    function myFunction() {
+  var x = document.getElementById("filterWrapper");
+  if (x.style.display === "none") {
+    x.style.display = "grid";
+  } else {
+    x.style.display = "none";
+  }
+}
 
-                // Loop through the data and each item to the list
-                data.forEach(student => {
-                const li = document.createElement('li');
-                const a = document.createElement('a');
+            fetch('items.json')
+    .then(response => response.json())
+    .then(data => {
+    
+    const foodWrapper = document.getElementById('foodWrapper');
+    const buttonHot = document.getElementById ('hot');
+    const buttonCold = document.getElementById ('cold');
+    const buttonSweet = document.getElementById ('sweet');
+    const buttonSavory = document.getElementById ('savory');
+    const buttonSoft = document.getElementById ('soft');
+    const buttonCrunchy = document.getElementById ('crunchy');
+    const buttonSoup = document.getElementById ('soup');
+    const buttonDry = document.getElementById ('dry');
+    const buttonHeavy = document.getElementById ('heavy');
+    const buttonLight = document.getElementById ('light');
+    const buttonSpicy = document.getElementById ('spicy');
+    const buttonSalty = document.getElementById ('salty');
+    const buttonAll = document.getElementById ('all');
 
-                // Set the test content and href attributes for the link
-                a.textContent = student.Name;
-                a.href = "http://" + student.Github + ".github.io";
+    //loop through the data and add each item to the div
+    data.forEach(item => {
+        const div = document.createElement('div');
+        const name = document.createElement('p');
+        const img = document.createElement ('img');
+        div.classList.add("card");
+        
+        //Set the text content and href attributes for the link
+        name.textContent = item.Food;
+        img.src = "assets/food-images-truecolor/" + item.Images;
 
-                // Add the link to the list 
-                li.appendChild(a);
-                list.appendChild(li);
-            });
-            })
+        //Button to control filtering
+        /*
+        buttonAll.addEventListener('click', function(){
+            div.style.display = "block";
+        });
+        */
+        buttonCold.addEventListener('click', function(){
+            if (item.Cold == 1) {
+                div.style.display = "grid";
+            }
+            else {
+                div.style.display = "none";
+            }
+        });
+        
+
+        buttonHot.addEventListener('click', function(){
+            if (item.Hot == 1) {
+                div.style.display = "grid";
+            }
+            else {
+                div.style.display = "none";
+            }
+        });
+
+        buttonCold.addEventListener('click', function(){
+            if (item.Cold == 1) {
+                div.style.display = "grid";
+            }
+            else {
+                div.style.display = "none";
+            }
+        });
+
+        buttonSweet.addEventListener('click', function(){
+            if (item.Sweet == 1) {
+                div.style.display = "grid";
+            }
+            else {
+                div.style.display = "none";
+            }
+        });
+
+        buttonSavory.addEventListener('click', function(){
+            if (item.Savory == 1) {
+                div.style.display = "grid";
+            }
+            else {
+                div.style.display = "none";
+            }
+        });
+
+        buttonSoft.addEventListener('click', function(){
+            if (item.Soft == 1) {
+                div.style.display = "grid";
+            }
+            else {
+                div.style.display = "none";
+            }
+        });
+
+        buttonCrunchy.addEventListener('click', function(){
+            if (item.Crunchy == 1) {
+                div.style.display = "grid";
+            }
+            else {
+                div.style.display = "none";
+            }
+        });
+
+        buttonSoup.addEventListener('click', function(){
+            if (item.Soup == 1) {
+                div.style.display = "grid";
+            }
+            else {
+                div.style.display = "none";
+            }
+        });
+
+        buttonDry.addEventListener('click', function(){
+            if (item.Dry == 1) {
+                div.style.display = "grid";
+            }
+            else {
+                div.style.display = "none";
+            }
+        });
+
+        buttonHeavy.addEventListener('click', function(){
+            if (item.Heavy == 1) {
+                div.style.display = "grid";
+            }
+            else {
+                div.style.display = "none";
+            }
+        });
+
+        buttonLight.addEventListener('click', function(){
+            if (item.Light == 1) {
+                div.style.display = "grid";
+            }
+            else {
+                div.style.display = "none";
+            }
+        });
+
+        buttonSpicy.addEventListener('click', function(){
+            if (item.Spicy == 1) {
+                div.style.display = "grid";
+            }
+            else {
+                div.style.display = "none";
+            }
+        });
+
+        buttonSalty.addEventListener('click', function(){
+            if (item.Salty == 1) {
+                div.style.display = "grid";
+            }
+            else {
+                div.style.display = "none";
+            }
+        });
+
+        buttonAll.addEventListener('click', function(){
+            if (item.All == 1) {
+                div.style.display = "grid";
+            }
+            else {
+                div.style.display = "none";
+            }
+        });
+        
+
+        //Add HTML tags to webpage
+        div.appendChild(name);
+        div.appendChild(img);
+        foodWrapper.appendChild(div);
+
+    });
+
+    })
+    .catch(error => console.error(error));
     </script>
 </head>
 
 <body>
+    
     <div id="websiteFrameTop" class="websiteFrame"></div>
     <div id="websiteFrameRight" class="websiteFrame"></div>
     <div id="websiteFrameBottom" class="websiteFrame"></div>
     <div id="websiteFrameLeft" class="websiteFrame"></div>
+
+    <video autoplay muted loop id="bgVideo">
+        <source src="assets/video/star-bg.mp4" type="video/mp4">
+        </video>
 
     <div class="navBar">
         <div>
@@ -53,18 +226,19 @@
     </div>
 
     <div id="filterWrapper" class="filterWrapper">
-        <li>Hot</li>
-        <li>Cold</li>
-        <li>Sweet</li>
-        <li>Savory</li>
-        <li>Soft</li>
-        <li>Crunchy</li>
-        <li>Soup</li>
-        <li>Dry</li>
-        <li>Heavy</li>
-        <li>Light</li>
-        <li>Spicy</li>
-        <li>Salty</li>
+        <li id="hot">Hot</li>
+        <li id="cold">Cold</li>
+        <li id="sweet">Sweet</li>
+        <li id="savory">Savory</li>
+        <li id="soft">Soft</li>
+        <li id="crunchy">Crunchy</li>
+        <li id="soup">Soup</li>
+        <li id="dry">Dry</li>
+        <li id="heavy">Heavy</li>
+        <li id="light">Light</li>
+        <li id="spicy">Spicy</li>
+        <li id="salty">Salty</li>
+        <li id="all">All</li>
 </div>
 
     <header class="container">
@@ -74,16 +248,23 @@
     </header>
 
 
-    <div class="foodWrapper">
-    <div class="card">
-        
+    <div id="foodWrapper"></div>
+
+    <div class="navBarBottom">
+        <button class="filterButton">
+           <a class="about" href="about.html">About</a>
+        </button>
+        <div class="wrapper">
+            <div class="repeat">
+              <p>
+                | Smoke | Munch | Sleep | Repeat | Smoke | Munch | Sleep | Repeat | Smoke | Munch | Sleep | Repeat | Smoke | Munch | Sleep | Repeat 
+              </p>
+              <p>
+                | Smoke | Munch | Sleep | Repeat | Smoke | Munch | Sleep | Repeat | Smoke | Munch | Sleep | Repeat | Smoke | Munch | Sleep | Repeat 
+              </p>
+            </div>
+          </div>
     </div>
-    </div>
-
-
-
- 
-
 
 </body>
 
