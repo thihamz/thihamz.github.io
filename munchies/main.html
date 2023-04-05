@@ -60,11 +60,6 @@
         img.src = "assets/food-images-truecolor/" + item.Images;
 
         //Button to control filtering
-        /*
-        buttonAll.addEventListener('click', function(){
-            div.style.display = "block";
-        });
-        */
         buttonCold.addEventListener('click', function(){
             if (item.Cold == 1) {
                 div.style.display = "grid";
@@ -74,7 +69,6 @@
             }
         });
         
-
         buttonHot.addEventListener('click', function(){
             if (item.Hot == 1) {
                 div.style.display = "grid";

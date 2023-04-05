@@ -4,6 +4,9 @@ font-family: 'VT323', monospace;
 font-family: 'Anton', sans-serif;*/
 
 /**************** Website Frame ******************/
+body {
+  cursor: url('assets/cursor/hand.png'), auto;
+}
 
 .websiteFrame {
   position: fixed;
@@ -126,42 +129,72 @@ img {
 .img1 {
   top: 10%;
   left: 15%;
-  animation: circle1 35s linear infinite;
+  animation: circle1 10s linear infinite;
 }
 
 .img2 {
   top: 15%;
   left: 66%;
-  animation: circle2 30s linear infinite;
+  animation: circle2 15s linear infinite;
 }
 
 .img3 {
   top: 40%;
-  left: 5%;
+  left: 15%;
   animation: circle3 20s linear infinite;
 }
 
 .img4 {
   top: 80%;
   left: 70%;
-  animation: circle4 30s linear infinite;
+  animation: circle4 20s linear infinite;
 }
 
 .img5 {
   top: 70%;
   left: 15%;
-  animation: circle5 50s linear infinite;
+  animation: circle5 15s linear infinite;
 }
 
 .img6 {
-  top: 50%;
+  top: 55%;
   left: 80%;
-  animation: circle6 40s linear infinite;
+  animation: circle6 10s linear infinite;
+}
+
+.img7 {
+  top: 35%;
+  left: 80%;
+  animation: circle7 10s linear infinite;
+}
+
+.img8 {
+  top: 60%;
+  left: 55%;
+  animation: circle8 10s linear infinite;
+}
+
+.img9 {
+  top: 25%;
+  left: 35%;
+  animation: circle10 10s linear infinite;
+}
+
+.img10 {
+  top: 10%;
+  left: 50%;
+  animation: circle9 10s linear infinite;
+}
+
+.img11 {
+  top: 70%;
+  left: 35%;
+  animation: circle9 10s linear infinite;
 }
 
 @keyframes circle1 {
   from {
-    transform: rotate(0deg) translate (-30px) rotate(0deg);
+    transform: rotate(0deg) translate(-30px) rotate(0deg);
   }
 
   to {
@@ -171,7 +204,7 @@ img {
 
 @keyframes circle2 {
   from {
-    transform: rotate(360deg) translate (-30px) rotate(-360deg);
+    transform: rotate(360deg) translate(-30px) rotate(-360deg);
   }
 
   to {
@@ -181,7 +214,7 @@ img {
 
 @keyframes circle3 {
   from {
-    transform: rotate(360deg) translate (-30px) rotate(-360deg);
+    transform: rotate(360deg) translate(-30px) rotate(-360deg);
   }
 
   to {
@@ -191,7 +224,7 @@ img {
 
 @keyframes circle4 {
   from {
-    transform: rotate(0deg) translate (-30px) rotate(0deg);
+    transform: rotate(0deg) translate(-30px) rotate(0deg);
   }
 
   to {
@@ -201,7 +234,7 @@ img {
 
 @keyframes circle5 {
   from {
-    transform: rotate(360deg) translate (-30px) rotate(-360deg);
+    transform: rotate(360deg) translate(-30px) rotate(-360deg);
   }
 
   to {
@@ -211,13 +244,55 @@ img {
 
 @keyframes circle6 {
   from {
-    transform: rotate(360deg) translate (-30px) rotate(-360deg);
+    transform: rotate(360deg) translate(-30px) rotate(-360deg);
   }
 
   to {
     transform: rotate(0deg) translate(-30px) rotate(0deg);
   }
 }
+
+@keyframes circle7 {
+  from {
+    transform: rotate(0deg) translate(-30px) rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg) translate(-30px) rotate(-360deg);
+  }
+}
+
+@keyframes circle8 {
+  from {
+    transform: rotate(0deg) translate(-30px) rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg) translate(-30px) rotate(-360deg);
+  }
+}
+
+@keyframes circle9 {
+  from {
+    transform: rotate(360deg) translate(-30px) rotate(-360deg);
+  }
+
+  to {
+    transform: rotate(0deg) translate(-30px) rotate(0deg);
+  }
+}
+
+@keyframes circle10 {
+  from {
+    transform: rotate(0deg) translate(-30px) rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg) translate(-30px) rotate(-360deg);
+  }
+}
+
+
 
 /**************** Hover effect Laptop ******************/
 

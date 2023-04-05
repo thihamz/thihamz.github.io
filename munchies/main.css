@@ -248,13 +248,13 @@ a {
 }
 
 .filterWrapper {
+   display: none;
    border: solid 1px transparent;
    /* background-image: linear-gradient(var(--color-quaternary),var(--color-quinary),var(--color-secondary),var(--color-tertiary)); */
    background-color: var(--color-tertiary);
    border-bottom: dashed 1px var(--color-tertiary);
    padding: 10px;
 
-   display: grid;
    grid-template-columns: repeat(4, 1fr);
    gap: 10px;
    justify-items: center;
@@ -274,7 +274,7 @@ a {
       border-bottom: dashed 1px var(--color-tertiary);
       padding: 10px;
 
-      display: grid;
+      display: none;
       grid-template-columns: repeat(4, 1fr);
       gap: 10px;
       justify-items: center;
