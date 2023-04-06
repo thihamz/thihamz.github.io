@@ -31,11 +31,80 @@
             color: black;
         }
 
+        header {
+            font-family: 'Sora';
+            font-weight: 600;
+            font-size: 5vw;
+            border-bottom: dashed 1.5px black;
+            
+        }
+        img{
+            width: 60%;
+            height: auto;
+        }
+
+        .image{
+            border-bottom: dashed 1.5px black;
+        }
+
+        .information {
+            font-family: 'Sora';
+            font-weight: 600;
+            font-size: 2.2vw;
+            border-bottom: dashed 1.5px black;
+        }
+
+        .pairInfo {
+            font-family: 'Sora';
+            font-weight: 600;
+            font-size: 5vw;
+        }
+        .backButton {
+            background-color: black;
+            border: none;
+
+            font-family: 'Sora', sans-serif;
+            font-weight: 400;
+
+            cursor: pointer;
+        }
+        a {
+            text-decoration: none;
+            color: var(--color-tertiary);
+        }
 </style>
 </head>
 
 <body>
+<header>
+    Chicken Over Rice
+</header>
+<div class="image">
+    <img src="assets/food-images-truecolor/chicken-over-rice.png">
+</div>
+<div class="information">
+Tags: Hot, Savory, Crunchy, Heavy
+<br>
+Price: $9
+<br>
+Where: Stuy Grill & Deli
+<br>
+</div>
+<div class="pairInfo">
+    Pair it with:
+</div>
+<div class="pairImage">
+    <img src="assets/food-images-truecolor/vanleeuwen.png">
+</div>
+<div class="information">
+Vanleeuwen Ice Cream
+</div>
 
+<div class="backBarBottom">
+    <button class="backButton">
+        <a class="about" href="main.html">Back</a>
+    </button>
+</div>
 </body>
 
 </html>
