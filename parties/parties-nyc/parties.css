@@ -1,0 +1,37 @@
+:root {
+    --main-bg-color: rgb(238, 238, 238);
+    --padding: 20px;
+
+    --primary-color: black;
+    --secondary-color: rgb(238, 238, 238);
+    --tereiary-color: blue;
+    
+    --border1: solid 1px transparent;
+    --border2: solid 1px transparent;
+    --border3: solid 1px pink;
+
+}
+
+.container {
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+.titleText {
+    font-family: Helvetica, sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.aboutContainer {
+    border: var(--border1);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    width: 70vw;
+
+    display: flex;
+    justify-content: left;
+    color: black;
+}
