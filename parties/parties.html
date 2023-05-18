@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="parties.css">
+</head>
+
+<body id="body">
+
+
+
+    <script src="../p5.min.js"></script>
+    <script src="parties.js"></script>
+
+    <main class="container">
+        <div>
+            <div class="titleText">
+                Where Is The Party At?
+            </div>
+        </div>
+        <div class="aboutContainer">
+            <p>Core 2: Interaction Studio project on Data Visualization.
+                <br> <br>
+                This dataset contains all noise complaints calls that were received by the city police with complaint
+                type
+                "Loud music/Party" in 2016. The data contains the time of the call, time of the police response,
+                coordinates, and part of the city. This data should help match taxi rides from "New York City Taxi Trip
+                Duration" competition to the night rides of partygoers.
+            </p>
+        </div>
+    </main>
+
+    <div class="buttonPlacement">
+        <div class="button">
+            <a class="dataLink" href="data.html"> Party Data </a>
+        </div>
+
+        <div class="button">
+            <a class="dataLink" href="tel:311">Call 311 </a>
+        </div>
+        
+        <button type="button" value="Play" id="play" onClick="play()" class="button">
+            <audio id="myaduio" src="background-song.mp3" type="audio/mpeg">
+            </audio> Play Music </button>
+        <button style="display:none;" type="button" value="Pause" id="pause" onClick="pause()" class="button"> Pause
+            Music </button>
+            
+            <!-- <button id="music" onClick="playPause()" class="button">
+                <audio src="background-song.mp3" autoplay loop></audio>
+                Music
+              </button> -->
+    </div>
+
+
+    <div class="backgroundColors">
+        <p id="para">BACKGROUND-COLOR IS RANDOMLY GENERATED</p>
+        <p id="a1">REFRESH PAGE TO CHANGE COLOR</p>
+        <p id="output"></p>
+    </div>
+
+    <!-- By placing the script at the end of the HTML, you can be sure
+         that scanning for HTML elements will work.     -->
+    <script>
+        var link = document.getElementById("a1");
+        var output = document.getElementById("output");
+        // And when the link is clicked:
+        link.addEventListener("click", getRandom);
+
+        function getRandom() {
+            // 16777215 (decimal) == ffffff in hexidecimal
+            var newColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+
+            // Convert hex to RGB:
+            var rgbColor = newColor.replace('#', '');
+            var r = parseInt(rgbColor.substring(0, 2), 16);
+            var g = parseInt(rgbColor.substring(2, 4), 16);
+            var b = parseInt(rgbColor.substring(4, 6), 16);
+            var result = 'rgba(' + r + ',' + g + ',' + b + ')';
+
+            document.body.style.backgroundColor = newColor;
+            output.textContent = newColor + " - " + result;
+        };
+
+//         var aud = document.getElementById("music").children[0];
+//   var isPlaying = false;
+//   aud.pause();
+
+//   function playPause() {
+//     if (isPlaying) {
+//       aud.pause();
+//     } else {
+//       aud.play();
+//     }
+//     isPlaying = !isPlaying;
+//   }
+        // We want the background to get a random color as soon as the page loads
+        // as well as when the link is clicked, so the function will be called right away      
+        getRandom();
+
+         function play() {
+             var audio = document.getElementById("myaduio");
+             audio.play();
+             document.getElementById("play").style.display = "none";
+             document.getElementById("pause").style.display = "block";
+         }
+
+         function pause() {
+             var audio = document.getElementById("myaduio");
+             audio.pause();
+             document.getElementById("play").style.display = "block";
+             document.getElementById("pause").style.display = "none";
+         }
+    </script>
+
+</body>
+
+</html>
