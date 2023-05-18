@@ -1,0 +1,118 @@
+:root {
+    --main-bg-color: rgb(238, 238, 238);
+    --padding: 20px;
+
+    --primary-color: black;
+    --secondary-color: rgb(238, 238, 238);
+    --tereiary-color: blue;
+    --green-color: rgb(15, 231, 15);
+    
+    --border1: solid 1px transparent;
+    --border2: solid 1px transparent;
+    --border3: solid 1px pink;
+
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+.container {
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+.titleText {
+    font-family: Helvetica, sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    padding-left: 0.5rem;
+}
+
+.aboutContainer {
+    
+    border: var(--border1);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    width: 60vw;
+    padding-left: 0.5rem;
+
+    display: flex;
+    justify-content: left;
+    color: black;
+    position: absolute;
+}
+
+.button {
+    border: solid 1px black;
+    color: black;
+    border-radius: 50px;
+    font-family: arial;
+    cursor: pointer;
+    padding: 0.5rem;
+    display: absolute;
+    width: max-content;
+    margin: 0.5rem;
+}
+
+.buttonPlacement {
+    position: absolute;
+    top: 60%;
+}
+
+.button:hover {
+    border: solid 1px black;
+    background-color: black;
+    color: var(--secondary-color);
+    border-radius: 50px;
+    font-family: arial;
+    cursor: pointer;
+    padding: 0.5rem;
+    width: max-content;
+}
+
+a.dataLink {
+    text-decoration: none;
+    color: black;
+}
+
+a.dataLink:hover {
+    text-decoration: none;
+    color:var(--secondary-color);
+}
+
+.nav {
+    font-family: arial;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+a.call311 {
+    text-decoration: none;
+    color: black;
+}
+
+.backgroundColors {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+
+    border: solid 1px black;
+    border-radius: 10px;
+    display: flex;
+    width: 98%;
+    justify-content: space-between;
+    vertical-align: middle;
+    bottom: 3%;
+    position: absolute;
+
+    margin-left: 0.2rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+}
