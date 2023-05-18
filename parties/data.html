@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>p5.js example</title>
+  <link rel="stylesheet" href="data.css">
+  <script src="../p5.min.js"></script>
+  <script src="sketch.js"></script>
+  <script src="filter.js"></script>
+  <script>
+
+  </script>
+</head>
+<body>
+
+  <div>
+    <p class="key"> Circle sizes are equivalent to the duration of the party. The bigger the circle, the longer the party!</p>
+  </div>
+  <div class="navBar">
+    
+    <div class="dropdown">
+      <div class="dropbtn">Find the Parties</div>
+      <div class="dropdown-content">
+        <button onclick="drawManhattan()" id="buttonManhattan"> MANHATTAN </button>
+        <button onclick="drawBrooklyn()" id="buttonBrooklyn"> BROOKLYN </button>
+        <button onclick="drawQueens()" id="buttonQueens"> QUEENS </button>
+        <button onclick="drawBronx()" id="buttonBronx"> BRONX </button>
+        <button onclick="drawStaten()" id="buttonStaten"> STATEN ISLAND </button>
+        <button onclick="drawAll()" id="buttoAll"> ALL </button>
+        <button onclick="clearCanvas()" id="buttoClear"> CLEAR </button>
+        
+      </div>
+    </div>
+
+    <a href="parties/parties.html" class="home"> Home </a>
+
+    <a href="tel:311" class="call311"> Call 311 </a>
+
+    <!-- <label class="switch">
+      <input type="checkbox">
+      <span class="slider round"></span>
+    </label> -->
+
+  </div>
+</body>
+</html>
+
+
+
