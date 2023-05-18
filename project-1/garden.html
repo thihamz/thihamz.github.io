@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In Praise Of Shadows</title>
+    <link rel="stylesheet" href="garden.css">
+    <link rel="stylesheet" href="garden2.css">
+    <link rel="stylesheet" href="images.css" <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+
+</head>
+
+<body onload="move('theDiv')">
+
+   
+    <div id="parasol1" class="parasol1-div">
+        <img class="parasol1-obj" src="assets/images/parasol1.png" >
+    </div>
+
+    <div id="parasol2" class="parasol2-div">
+        <img class="parasol2-obj" src="assets/images/parasol2.png" >
+    </div>
+
+    <div id="rock1" class="rock1-div">
+        <img class="rock1-obj" src="assets/images/rock1.png" >
+    </div>
+
+    <div id="rock2" class="rock2-div">
+        <img src="assets/images/rock2.png" alt="rock2" class="rock2-obj">
+    </div>
+
+    <div id="rock3" class="rock3-div">
+        <img src="assets/images/rock3.png" alt="rock3" class="rock3-obj">
+    </div>
+
+    <div id="tree1" class="tree1-div">
+        <img src="assets/images/tree1.png" alt="tree1" class="tree1-obj">
+    </div>
+
+    <div id="tree2" class="tree2-div">
+        <img src="assets/images/tree2.png" alt="tree1" class="tree2-obj">
+    </div>
+
+    <h1 class="header-container"> IN<br>PRAISE<br>OF<br>SHADOWS </h1>
+
+    <nav class="navbar">
+        <a href="garden.html">THE GARDEN</a>
+        <div id="toggle">
+            <i class="switch"> </i>
+        </div>
+    </nav>
+
+
+    <article class="garden-container" img="">
+
+        <a href="shadows-of-eaves.html"><div class="section-title">
+            <p class="text">ひさしの影</p>
+            <p>Shadows of Eaves</p>
+        </div>
+        </a>
+
+        <div class="random1">
+            <img src="assets/images/random1.png">
+        </div>
+
+       <a href="heavy-or-light.html"> <div class="section-title">
+            <p class="text">重いか軽いか</p>
+            <p> Heavy or Light</p>
+        </div>
+        </a>
+        
+        <div class="section-title">
+            <p class="text">ピクチャーアルコーブ</p>
+            <p>Picture Alcove</p>
+        </div>
+
+        <div class="random2"></div>
+
+        <div class="section-title">
+            <p class="text">私たちの祖先の天才</p>
+            <p>The Genius of Our Ancestor</p>
+        </div>
+
+        <div class="random3"></div>
+
+        <div class="section-title">
+            <p class="text">金</p>
+            <p>Gold</p>
+        </div>
+
+        <div class="random4"></div>
+
+    </article>
+
+    <script>
+        var dragValue;
+
+        function move(parasol1,parasol2,rock1,rock2,rock3,tree1,tree2) {
+            var element1 = document.getElementById("parasol1");
+            var element2 = document.getElementById("parasol2");
+            var element3 = document.getElementById("rock1");
+            var element4 = document.getElementById("rock2");
+            var element5 = document.getElementById("rock3");
+            var element6 = document.getElementById("tree1");
+            var element7 = document.getElementById("tree2");
+           
+            element1.style.position = "relative";
+            element1.onmousedown = function () {
+                dragValue = element1
+            }
+            element2.style.position = "relative";
+            element2.onmousedown = function () {
+                dragValue = element2
+            }
+            element3.style.position = "relative";
+            element3.onmousedown = function () {
+                dragValue = element3
+            }
+            element4.style.position = "relative";
+            element4.onmousedown = function () {
+                dragValue = element4
+            }
+            element5.style.position = "relative";
+            element5.onmousedown = function () {
+                dragValue = element5
+            }
+            element6.style.position = "relative";
+            element6.onmousedown = function () {
+                dragValue = element6
+            }
+            element7.style.position = "relative";
+            element7.onmousedown = function () {
+                dragValue = element7
+            }
+
+        }
+        document.onmouseup = function (e) {
+            dragValue = null;
+        }
+        document.onmousemove = function (e) {
+            var x = e.pageX;
+            var y = e.pageY;
+
+            dragValue.style.left = x -150 + "px";
+            dragValue.style.top = y -150 + "px";
+        }
+    </script>
+
+
+
+</body>
+
+</html>

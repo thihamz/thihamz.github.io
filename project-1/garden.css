@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'universblack';
+    src: url('../project-1/assets/fonts/univers-black-webfont.woff2') format('woff2'),
+        url('../project-1/assets/fonts/univers-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'universbold';
+    src: url('../project-1/assets/fonts/univers-bold-webfont.woff2') format('woff2'),
+        url('../project-1/assets/fonts/univers-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'univers';
+    src: url('../project-1/assets/fonts/univers-webfont.woff2') format('woff2'),
+        url('../project-1/assets/fonts/univers-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    background-color: black;
+    margin: 20px;
+}
+
+/*title*/
+.header-container {
+    border: solid 1px transparent;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'universblack', 'san-serif';
+    font-size: 12em;
+    line-height:80%;
+    color: white;
+}
+
+
+/*nav bar*/
+.navbar {
+    background-color: black;
+    border: solid 1px white;
+    padding: 10px;
+
+    display: flex;
+    overflow: hidden;
+    position:fixed;
+    top: 0;
+    width: 95.5%;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'univers', 'san-serif';
+    font-size: 1rem;
+}
+
+#toggle {
+    position: relative;
+    display: block;
+    transition: 0.5s;
+    width: 30px;
+    height: 15px;
+    border-radius: 50px;
+    background-color:blue;
+    border: solid 1px azure;
+    margin-bottom: 5px;
+}
+
+#toggle .switch {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color: white;
+    width: 15px;
+    height: 15px;
+}
+
+#toggle.active .switch {
+    right: 30px;
+}
+

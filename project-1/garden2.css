@@ -1,0 +1,97 @@
+/*table of content*/
+@font-face {
+    font-family: 'universblack';
+    src: url('../project-1/assets/fonts/univers-black-webfont.woff2') format('woff2'),
+        url('../project-1/assets/fonts/univers-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'universbold';
+    src: url('../project-1/assets/fonts/univers-bold-webfont.woff2') format('woff2'),
+        url('../project-1/assets/fonts/univers-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'univers';
+    src: url('../project-1/assets/fonts/univers-webfont.woff2') format('woff2'),
+        url('../project-1/assets/fonts/univers-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.section-title:hover {
+    background-color: white;
+    color: black;
+    transition: 500ms;
+}
+    
+
+.garden-container {
+    padding: 30px;
+    margin: 15px;
+
+    border: solid 1px transparent;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    flex-basis: 25%;
+}
+
+.section-title {
+    border: solid 1px white;
+
+    padding-right: 2em;
+    padding-left: 2em;
+
+    font-family: 'univers';
+    color: white;
+    font-size: 1.5vw;
+    line-height: 2em;
+
+    align-content: center;
+    overflow: hidden;
+}
+
+.text {
+    text-align: center;
+    font-family: 'Noto Sans JP';
+    font-size: 1.5vw;
+    line-height: 1em;
+}
+
+.random1 {
+    border: solid 1px white;
+    background-color: black;
+    height: 10vw;
+    width: 40vw;
+}
+
+.random1 img {
+    overflow: hidden;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.random2 {
+    border: solid 1px white;
+    padding: 1em;
+    width: 20%;
+}
+.random3 {
+    border: solid 1px white;
+    padding: 1em;
+    width: 30%;
+}
+.random4 {
+    border: solid 1px white;
+    padding: 1em;
+    width: 40%;
+}

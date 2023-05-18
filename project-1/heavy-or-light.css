@@ -1,0 +1,231 @@
+/****************************************** font face *******************************************/
+@font-face {
+    font-family: 'universblack';
+    src: url('../project-1/assets/fonts/univers-black-webfont.woff2') format('woff2'),
+        url('../project-1/assets/fonts/univers-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'universbold';
+    src: url('../project-1/assets/fonts/univers-bold-webfont.woff2') format('woff2'),
+        url('../project-1/assets/fonts/univers-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'univers';
+    src: url('../project-1/assets/fonts/univers-webfont.woff2') format('woff2'),
+        url('../project-1/assets/fonts/univers-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/****************************************** body styles *******************************************/
+body {
+    background-color: black;
+    margin: 20px;
+    color: white;
+    animation: color 10s ease-in-out infinite;
+}
+
+@keyframes color {
+    0% {
+        background-color: black;
+    }
+    40% {
+        background-color: antiquewhite;
+    }
+    70% {
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: black;
+    }
+}
+
+/****************************************** nav-bar *******************************************/
+.navbar {
+    z-index: 50;
+
+    background-color: black;
+    border: solid 1px white;
+    padding: 10px;
+
+    display: flex;
+    overflow: hidden;
+    position:fixed;
+    top: 0;
+    width: 95.5%;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'univers', 'san-serif';
+    font-size: 1rem;
+}
+
+#toggle {
+    position: relative;
+    display: block;
+    transition: 0.5s;
+    width: 30px;
+    height: 15px;
+    border-radius: 50px;
+    background-color:blue;
+    border: solid 1px azure;
+    margin-bottom: 5px;
+}
+
+#toggle .switch {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color: white;
+    width: 15px;
+    height: 15px;
+}
+
+#toggle.active .switch {
+    right: 30px;
+}
+
+/****************************************** contnet *******************************************/
+
+.carousel1, .carousel2, .carousel3 {
+    border: solid 1px transparent;
+    max-height: auto;
+
+    display: flex;
+    overflow-x: auto;
+    flex: row;
+    gap: 30px;
+}
+
+.carousel1 .text {
+    border: solid 1px transparent;
+    background-color: antiquewhite;
+    color: black;
+    border-radius: 5px;
+
+    padding: 30px;
+
+    min-width: 600px;
+    height: 400px;
+    
+    display: flex;
+    align-items: center;
+    animation: scroll 20s infinite;
+}
+
+@keyframes scroll{
+    0% {
+      transform: translateX(0%) ;
+    }
+    50% {
+      transform: translateX(100%) ;
+    }
+    100% {
+      transform: translateX(0%) ;
+    }
+}
+
+
+.carousel2 .text {
+    border: solid 1px transparent;
+    background-color: antiquewhite;
+    color: black;
+    border-radius: 5px;
+
+    padding: 30px;
+
+    min-width: 600px;
+    height: 400px;
+    
+    display: flex;
+    align-items: center;
+    animation: scroll2 20s infinite;
+}
+
+@keyframes scroll2 {
+    0% {
+      transform: translateX(0%) ;
+    }
+    50% {
+      transform: translateX(-50%) ;
+    }
+    100% {
+      transform: translateX(0%) ;
+    }
+}
+
+
+.carousel3 .text {
+    border: solid 1px transparent;
+    background-color: antiquewhite;
+    color: black;
+    border-radius: 5px;
+
+    padding: 30px;
+
+    min-width: 600px;
+    height: 400px;
+    
+    display: flex;
+    align-items: center;
+    animation: scroll3 20s infinite;
+}
+
+@keyframes scroll3 {
+    0% {
+      transform: translateX(-50%) ;
+    }
+    50% {
+      transform: translateX(50%) ;
+    }
+    100% {
+      transform: translateX(-50%) ;
+    }
+}
+
+/*********************************** div hover active **************************************/
+.carousel1 :hover {
+    box-shadow: 0 0 20px 10px rgb(91, 91, 91);
+    z-index: 5;
+    animation: none;
+}
+
+.carousel2 :hover {
+    box-shadow: 0 0 30px rgb(96, 96, 96);
+    z-index: 5;
+    animation: none;
+}
+
+.carousel3 :hover {
+    box-shadow: 0 0 30px rgb(96, 96, 96);
+    z-index: 5;
+    animation: none;
+}
+
+.text {
+    font-family: 'univers';
+    font-size: 2vw;
+    line-height: 150%;
+
+}
+
+::-webkit-scrollbar {
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border: solid 1px antiquewhite;
+    border-radius: 5px;
+}
+

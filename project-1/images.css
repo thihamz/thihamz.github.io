@@ -1,0 +1,140 @@
+
+.parasol1-div {
+    z-index: 500;
+    width: 0;
+    height: 0;
+    position: relative;
+    left: 15em;
+    top: 25em;
+    
+    mix-blend-mode: exclusion;
+
+    border-radius: 50%;
+    background-color: transparent;
+    border: solid 1px transparent;
+}
+
+.parasol2-div {
+    z-index: 500;
+    width: 0;
+    height: 0;
+    position: relative;
+    left: 60em;
+    top: 20em ;
+
+    mix-blend-mode: exclusion;
+
+    border-radius: 50%;
+    background-color: transparent;
+    border: solid 1px transparent;
+}
+
+.rock1-div {
+    width: 0;
+    height: 0;
+    position: relative;
+    left: 50em;
+    top: 47em;
+
+    mix-blend-mode: exclusion;
+
+    background-color: transparent;
+    border: solid 1px transparent;
+}
+
+.rock2-div {
+    width: 0;
+    height: 0;
+    position: relative;
+    left: -3em;
+    top: 80em;
+
+    mix-blend-mode: exclusion;
+
+    background-color: transparent;
+    border: solid 1px transparent;
+}
+
+.rock3-div {
+    width: 0;
+    height: 0;
+    position: relative;
+    left: 45em;
+    top: 67em;
+
+    mix-blend-mode: exclusion;
+
+    background-color: transparent;
+    border: solid 1px transparent;
+}
+
+.tree1-div {
+    width: 0;
+    height: 0;
+    position: relative;
+    left: -6em;
+    top: 45em;
+
+    mix-blend-mode: exclusion;
+
+    background-color: transparent;
+    border: solid 1px transparent;
+}
+
+.tree2-div {
+    width: 0;
+    height: 0;
+    position: relative;
+    left: 60em;
+    top: 75em;
+
+    mix-blend-mode: exclusion;
+
+    background-color: transparent;
+    border: solid 1px transparent;
+}
+
+
+/***************************** object sizing **********************************/
+
+.parasol1-obj {
+    width: 17em;
+    height: auto;
+    overflow: hidden;
+}
+
+.parasol2-obj {
+    width: 20em;
+    height: auto;
+    overflow: hidden;
+}
+
+.rock1-obj {
+    width: 30em;
+    height: auto;
+    overflow: hidden;
+}
+
+.rock2-obj {
+    width: 12em;
+    height: auto;
+    overflow: hidden;
+}
+
+.rock3-obj {
+    width: 17em;
+    height: auto;
+    overflow: hidden;
+}
+
+.tree1-obj {
+    width: 20em;
+    height: auto;
+    overflow: hidden;
+}
+
+.tree2-obj {
+    width: 25em;
+    height: auto;
+    overflow: hidden;
+}

@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'universblack';
+    src: url('../project-1/assets/fonts/univers-black-webfont.woff2') format('woff2'),
+        url('../project-1/assets/fonts/univers-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'universbold';
+    src: url('../project-1/assets/fonts/univers-bold-webfont.woff2') format('woff2'),
+        url('../project-1/assets/fonts/univers-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'univers';
+    src: url('../project-1/assets/fonts/univers-webfont.woff2') format('woff2'),
+        url('../project-1/assets/fonts/univers-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/******************************* body styles ****************************/
+body {
+    background-color: black;
+    margin: 20px;
+    justify-content: center;
+}
+
+#canvas {
+    z-index: 10;
+
+    background-image: url("img/image.jpg");
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 800px;
+
+    position: absolute;
+}
+
+.text-container {
+    color: white;
+    margin-top: 4vw;
+    width: 1380px;
+
+    text-align: justify;
+
+    position: absolute;
+    animation: glow 3s ease-in-out infinite alternate;
+}
+
+.fadein-out {
+    animation: fade-inout 5s infinite alternate;
+}
+
+
+@keyframes fade-inout {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  
+  /**************************** glow animation ***********************/
+  
+/@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 5px rgb(207, 207, 207), 0 0 10px rgb(255, 255, 255);
+    }
+    
+    to {
+      text-shadow: 0 0 10px rgb(7, 6, 6), 0 0 20px #5b5b5b, 
+    }
+  }
+  
+
+.body-text {
+    z-index: 5;
+
+    background-color: black;
+
+    font-family: 'univers', Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+    line-height: 130%;
+
+    padding: 2vw;
+
+    position: absolute;
+}
+
+body-text:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+
+/****************************************** nav-bar *******************************************/
+.navbar {
+    z-index: 50;
+
+    background-color: black;
+    border: solid 1px white;
+    padding: 10px;
+
+    display: flex;
+    overflow: hidden;
+    position:fixed;
+    top: 0;
+    width: 95.5%;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'univers', 'san-serif';
+    font-size: 1rem;
+}
+
+#toggle {
+    position: relative;
+    display: block;
+    transition: 0.5s;
+    width: 30px;
+    height: 15px;
+    border-radius: 50px;
+    background-color:blue;
+    border: solid 1px azure;
+    margin-bottom: 5px;
+}
+
+#toggle .switch {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color: white;
+    width: 15px;
+    height: 15px;
+}
+
+#toggle.active .switch {
+    right: 30px;
+}
